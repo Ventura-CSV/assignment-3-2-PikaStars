@@ -21,6 +21,13 @@ def main():
         median = num2
     if (num3 > num2 and num3 < num1) or (num3 < num2 and num3 > num1):
         median = num3
+    #maxval
+    if (num1 > num2 and num1 > num3):
+        maxval = num1
+    if (num3 > num2 and num3 > num1):
+        maxval = num3
+    if (num2 > num1 and num2 > num3):
+        maxval = num2
     print(minval, median, maxval)
     ########################################
     # Do not delete the return statement
