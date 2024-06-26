@@ -14,6 +14,13 @@ def main():
         minval = num2
     elif (num3 < num2 and num3 < num1):
         minval = num3
+    #median
+    if (num1 > num2 and num1 < num3) or (num1 < num2 and num1 > num3):
+        median = num1
+    if (num2 > num1 and num2 < num3) or (num2 < num1 and num2 > num3):
+        median = num2
+    if (num3 > num2 and num3 < num1) or (num3 < num2 and num3 > num1):
+        median = num3
     print(minval, median, maxval)
     ########################################
     # Do not delete the return statement
